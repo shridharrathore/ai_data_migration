@@ -1,0 +1,24 @@
+{
+  "source_system": "CRM_v1",
+  "target_system": "CRM_v2",
+  "confidence_score": 0.98,
+  "notes": "Test mapping from CRM_v1 to CRM_v2",
+  "table_mappings": [
+    {
+      "source_table": "users_old",
+      "target_table": "users_new",
+      "field_mappings": [
+        {
+          "source_field": "id",
+          "target_field": "user_id"
+        },
+        {
+          "source_field": "name",
+          "target_field": "full_name"
+        }
+      ],
+      "strategy": "full_load",
+      "complexity": "low"
+    }
+  ]
+}
